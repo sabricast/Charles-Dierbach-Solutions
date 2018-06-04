@@ -3,5 +3,4 @@
 
 
 def helloWorld(name):
-    output = print("Hello World, my name is", name)
-    return output
+    print("Hello World, my name is", name)
