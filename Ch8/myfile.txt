@@ -1,0 +1,3 @@
+This line has extra  space   characters.
+This  one too.
+But this one  is   the    problematic  one.
