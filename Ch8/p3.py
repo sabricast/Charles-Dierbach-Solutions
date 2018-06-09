@@ -16,7 +16,7 @@ def checkQuotes(line):
 # --- main
 
 
-input_file = open('insertfilehere.txt', 'r')
+input_file = open('filename.txt', 'r')
 line = input_file.readline()
 checkQuotes(line)
 
