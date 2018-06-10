@@ -42,6 +42,8 @@ def calcRatios(n1, n2):
 
     Returns the ratio between n1 and n2.
 
+    \>>> calcRatios(20, 10) -> 2.0
+
     """
 
     return n1/n2
