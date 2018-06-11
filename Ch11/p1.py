@@ -34,3 +34,10 @@ def iseven_r(number):
     else:
         return False
     return iseven_r(number)
+
+
+### Version found online, shorter than mine, I like it a lot.
+ def isEven(number):
+     if number < 2:
+         return number % 2 == 0
+     return isEven(number - 2)
