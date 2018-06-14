@@ -10,7 +10,7 @@ def countLetter(s, letter):
     Return how many times letter appears on string.
 
     """
-
+    s = s.lower()
     return s.count(letter)
 
 # Recursive
@@ -22,17 +22,23 @@ def countLetter_r(s, letter, number=0):
     Return how many times letter appears on string.
 
     """
+    s = s.lower()
     if len(s) == 0:
         return number
     elif s[0] == letter:
         number += 1
     return countLetter_r(s[1:], letter, number)
 
-# --- main
+
+#Recursive, without using the extra keyword argument.
 
 
-print(countLetter('Hello', 'l'))
-print(countLetter_r('Hello', 'l'))
+def rcountLetter(s, letter):
+    s = s.lower()
+    if s == '':
+        return 0
+    elif s[0] == letter:
+        return rcountLetter(s[1:], letter) + 1
+    elif s[0] != letter:
+        return rcountLetter(s[1:], letter) + 0
 
-print(countLetter('Sabrina', 'a'))
-print(countLetter_r('Sabrina', 'a'))
